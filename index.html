@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="shortcut icon" href="https://hipermaxi.com/wp-content/uploads/2021/04/logo@2x.png">
+    <title>Formulario de reclamos</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="https://hipermaxi.com/wp-content/uploads/2021/04/logo@2x.png" alt="Logo de la página" class="logo">
+    </div>
+
+    <form>
+        <h1>Formulario de quejas</h1>
+        <div class="form-column">
+            <div class="entradas contendor-entrada">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" style="height: 2.5rem;" class="input">
+            </div>
+
+            <div class="entradas contendor-entrada">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" style="height: 2.5rem;" class="input">
+            </div>
+
+            <div class="entradas contendor-entrada">
+                <label for="numero-celular">Número de celular</label>
+                <input type="tel" id="numero-celular" placeholder="Ejemplo: +1234567890" style="height: 2.5rem;"
+                    class="input">
+            </div>
+
+            <div class="entradas contendor-entrada">
+                <label for="categorias">Categorías</label>
+                <select id="categorias" style="height: 2.5rem;">
+                    <option value="falta-de-productos">Falta de productos en stock</option>
+                    <option value="mala-atencion">Mala atención</option>
+                    <option value="producto-de-mala-calidad">Producto de mala calidad</option>
+                </select>
+            </div>
+
+            <div class="entradas contendor-entrada">
+                <label for="detalles">Detalles</label>
+                <textarea id="detalles" style="height: 20rem;"></textarea>
+            </div>
+            <div class="contendor-entrada">
+                <div class="entradas">
+                    <label for="pruebas"><span>Pruebas</span></label>
+                    <input type="file" id="pruebas" accept="image/*, video/*, .pdf" style="height: 2.5rem;">
+
+                </div>
+
+                <div class="entradas">
+                    <label for="comentario-adicional">Comentario adicional</label>
+                    <textarea id="detalles" style="height: 14.8rem;"></textarea>
+                </div>
+            </div>
+
+
+
+            <button type="submit" value="Enviar">Enviar</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
